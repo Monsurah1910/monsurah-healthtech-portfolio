@@ -11,7 +11,7 @@
 .wrap{width:min(1080px,92%);margin:auto}.top{background:var(--navy);border-bottom:3px solid var(--gold);padding:15px 0}.top nav{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.top a{color:white;text-decoration:none;font-weight:700}.top .links{display:flex;gap:16px;flex-wrap:wrap;font-size:.9rem}
 .hero{background:radial-gradient(ellipse at 88% 8%,rgba(201,164,93,.18),transparent 32%),linear-gradient(120deg,#0d1a34,#243d60);color:white;padding:68px 0 64px;border-bottom:3px solid var(--gold)}.eyebrow{color:#e4c987;text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}h1,h2,h3,h4{font-family:Georgia,serif}h1{font-size:clamp(2.35rem,5vw,3.8rem);line-height:1.12;margin:12px 0 16px;max-width:900px}.hero p{max-width:820px;color:#e8edf5;font-size:1.08rem}
 section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.principle{background:#fff;border:1px solid var(--line);padding:18px;border-radius:8px}.principle strong{display:block;color:var(--navy);margin-bottom:4px}
-.case{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:9px;padding:26px;margin:22px 0;box-shadow:0 10px 28px rgba(16,31,61,.045)}.case-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}.status{display:inline-block;background:var(--pale);color:#75571f;border-radius:3px;padding:4px 9px;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.case h2{color:var(--navy);font-size:1.65rem;margin:8px 0}.meta{color:var(--muted);font-size:.9rem}.case h3{font-family:inherit;color:var(--navy);font-size:1rem;margin:20px 0 6px}.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px}.case ul{margin:8px 0;padding-left:21px}.skills{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.skills span{background:#f7f2e8;border:1px solid #eadfc8;padding:4px 9px;border-radius:4px;font-size:.8rem;color:#6b542b}
+.case{scroll-margin-top:24px;background:var(--white);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:9px;padding:26px;margin:22px 0;box-shadow:0 10px 28px rgba(16,31,61,.045)}.case-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}.status{display:inline-block;background:var(--pale);color:#75571f;border-radius:3px;padding:4px 9px;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.case h2{color:var(--navy);font-size:1.65rem;margin:8px 0}.meta{color:var(--muted);font-size:.9rem}.case h3{font-family:inherit;color:var(--navy);font-size:1rem;margin:20px 0 6px}.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px}.case ul{margin:8px 0;padding-left:21px}.skills{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.skills span{background:#f7f2e8;border:1px solid #eadfc8;padding:4px 9px;border-radius:4px;font-size:.8rem;color:#6b542b}
 .note{margin-top:20px;padding:16px 18px;background:var(--pale);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;color:#55472e}.disclaimer{background:#fff;border:1px solid var(--line);padding:22px;border-radius:8px;margin-top:28px}.back{display:inline-block;margin-top:18px;color:var(--navy);font-weight:800}footer{background:#09152a;color:#d6deea;padding:22px 0;font-size:.88rem}
 @media(max-width:720px){.principles,.case-grid{grid-template-columns:1fr}.hero{padding:50px 0}.case{padding:20px}.top nav{flex-direction:column}}
 </style>
@@ -28,7 +28,7 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:
 <div class="principle"><strong>Honest outcomes</strong>Targets, assumptions and proposed benefits are not presented as measured results.</div>
 </div>
 
-<article class="case">
+<article class="case" id="riverside">
 <div class="case-head"><div><span class="status">10Alytics capstone · Pod Polaris</span><h2>01. Riverside Community Health — Remote Patient Monitoring System</h2><div class="meta">Proposed digital health solution · Agile Scrum and Jira · Training scenario</div></div></div>
 <p>Riverside Community Health is presented in the capstone scenario as a provider supporting approximately 40,000 people living with chronic conditions, including hypertension and type 2 diabetes. The existing model relies heavily on periodic clinic appointments and manually recorded home readings, limiting visibility of patients’ health between appointments.</p>
 <div class="case-grid">
@@ -42,7 +42,7 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:
 <div class="skills"><span>Requirements analysis</span><span>Stakeholder mapping</span><span>RACI</span><span>User stories</span><span>Acceptance criteria</span><span>Agile / Scrum</span><span>Jira</span></div>
 </article>
 
-<article class="case">
+<article class="case" id="apex">
 <div class="case-head"><div><span class="status">Team / pod capstone</span><h2>02. Apex Health Network — Closed-Loop Medication Management</h2><div class="meta">Five Case Model · Business case and digital transformation proposal</div></div></div>
 <p>This team capstone explored how a large, decentralised healthcare network could address fragmented medication processes, manual data entry, information gaps, avoidable rework and medication discrepancies through a more connected medication pathway.</p>
 <div class="case-grid">
@@ -56,7 +56,7 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:
 <div class="skills"><span>Five Case Model</span><span>Business case</span><span>Stakeholder analysis</span><span>RACI</span><span>SWOT</span><span>Benefits and KPIs</span><span>Risk and governance</span></div>
 </article>
 
-<article class="case">
+<article class="case" id="carebridge">
 <div class="case-head"><div><span class="status">Training case study</span><h2>03. CareBridge Medical Centre — Discovery Phase Assessment</h2><div class="meta">Healthcare operations · Discovery and problem assessment</div></div></div>
 <p>The discovery assessment considered operational challenges affecting patient flow and service coordination at a medical centre.</p>
 <h3>Areas explored</h3>
@@ -67,7 +67,7 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:
 <div class="skills"><span>Discovery</span><span>Stakeholder identification</span><span>Process analysis</span><span>Problem definition</span><span>Data governance</span></div>
 </article>
 
-<article class="case">
+<article class="case" id="amberleigh">
 <div class="case-head"><div><span class="status">Team training project</span><h2>04. Amberleigh Care Home — Proposed eMAR Rollout</h2><div class="meta">Business Requirements Document · Revision 0.2 · 26 September 2026</div></div></div>
 <p>This training project examined the proposed move from paper-based medication administration and record keeping to an electronic medication administration record (eMAR) process in a residential and nursing care setting.</p>
 <div class="case-grid">
@@ -79,7 +79,7 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:
 <div class="skills"><span>BRD</span><span>AS-IS / TO-BE</span><span>Requirements</span><span>Stakeholder engagement</span><span>Process improvement</span><span>eMAR</span></div>
 </article>
 
-<article class="case">
+<article class="case" id="virginia-mason">
 <div class="case-head"><div><span class="status">Training case study</span><h2>05. Virginia Mason Medical — Patient Discharge Process Improvement</h2><div class="meta">Gap analysis · Current- and future-state process mapping</div></div></div>
 <p>This case study involved applying gap analysis and process-mapping techniques to examine a patient discharge process, identify differences between the current and desired states, and consider opportunities for improvement.</p>
 <p><strong>Analysis focus:</strong> understanding process steps, identifying gaps and using current-/future-state thinking to structure improvement discussions.</p>
@@ -88,7 +88,7 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:
 </article>
 
 <div class="disclaimer"><strong>Portfolio integrity statement</strong><p>These examples demonstrate learning, analysis and proposed approaches. They are not presented as evidence of live-system implementation or realised clinical outcomes. Quantitative targets and financial figures are identified as scenario assumptions unless independently validated. Team contributions are described as collaborative work.</p></div>
-<a class="back" href="index.html">← Return to the main portfolio</a>
+<a class="back" href="index.html#projects">← Back to all HealthTech case studies</a>
 </div></section>
 </main>
 <footer><div class="wrap">© 2026 Monsurah Abimbola Alagbe · HealthTech Business Analysis Portfolio</div></footer>
