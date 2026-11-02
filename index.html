@@ -153,6 +153,44 @@
       .grid { grid-template-columns: 1fr; }
       .hero { padding: 62px 0; }
     }
+
+    :root {
+      --navy:#101f3d; --blue:#29466e; --teal:#b58a3a; --ink:#202b3d;
+      --muted:#667085; --paper:#fbf9f4; --white:#fff; --line:#e7dfd0;
+      --pale:#f3eee4; --gold:#c9a45d; --gold-light:#ead7a9;
+    }
+    body { background:var(--paper); color:var(--ink); }
+    .top { background:var(--navy); border-bottom:1px solid rgba(201,164,93,.6); }
+    .brand, nav .links a { color:#fff; }
+    nav .links a:hover { color:var(--gold-light); }
+    .hero {
+      background:radial-gradient(ellipse at 88% 10%,rgba(201,164,93,.2),transparent 32%),
+      linear-gradient(120deg,#0d1a34,#172d50 66%,#243d60);
+      color:#fff; padding:76px 0 72px; border-bottom:3px solid var(--gold);
+    }
+    .hero-layout { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(230px,.7fr); align-items:center; gap:48px; }
+    .hero-photo-wrap { justify-self:end; width:min(100%,330px); padding:9px; border:1px solid rgba(234,215,169,.65); border-radius:180px 180px 18px 18px; background:rgba(255,255,255,.06); box-shadow:0 18px 48px rgba(0,0,0,.25); }
+    .hero-photo { display:block; width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center 25%; border-radius:170px 170px 12px 12px; background:#e9e5dc; }
+    .eyebrow,.section-kicker { color:var(--gold); }
+    h1 { font-family:Georgia,serif; font-weight:600; letter-spacing:-.035em; }
+    .hero p { color:#e8edf5; }
+    .btn { border-radius:4px; }
+    .btn.primary { background:linear-gradient(135deg,#e8d19a,#bd9347); color:#17243d; border-color:#d8bd7c; }
+    .btn.ghost { border-color:var(--gold); color:#fff; }
+    h2,h3 { font-family:Georgia,serif; }
+    h2 { color:#142544; }
+    .card { border-radius:8px; border-top:3px solid var(--gold); box-shadow:0 12px 32px rgba(16,31,61,.06); }
+    .tag { background:#f3ead7; color:#77571e; }
+    .skills span { border-radius:4px; background:#fffdf8; }
+    .notice { background:#f5efdf; border-left-color:var(--gold); color:#55472e; }
+    .timeline { border-left-color:#d7c49b; }
+    .timeline article:before { background:var(--gold); box-shadow:0 0 0 4px #f7f0df; }
+    .contact { background:linear-gradient(130deg,#101f3d,#203a60); border-top:3px solid var(--gold); }
+    .contact a { color:var(--gold-light); }
+    footer { background:#09152a; }
+    @media(max-width:760px){ .hero-layout{grid-template-columns:1fr;gap:30px}.hero-photo-wrap{justify-self:start;width:min(68%,260px);grid-row:1} }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
   </style>
 </head>
 <body>
@@ -177,13 +215,17 @@
 
 <main>
   <section class="hero" id="home">
-    <div class="wrap">
-      <div class="eyebrow">Professional Portfolio</div>
+    <div class="wrap hero-layout">
+      <div class="hero-copy">
+      <div class="eyebrow">Engineering · Healthcare · Technology · Impact</div>
       <h1>HealthTech Business Analyst | Engineering Consultant | Quality &amp; Process Improvement | Digital Health</h1>
       <p>I’m Monsurah Abimbola Alagbe, a civil and structural engineering professional, engineering consultant and developing HealthTech Business Analyst. I bring together extensive experience in engineering delivery, procurement, quality assurance, public-sector inspection, professional leadership and UK healthcare support. I am now applying this experience to business analysis, healthcare processes and digital health improvement.</p>
       <div class="actions">
         <a class="btn primary" href="#projects">Explore my case studies</a>
         <a class="btn ghost" href="#contact">Connect with me</a>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="assets/monsurah-professional-portrait.jpg" alt="Professional portrait of Monsurah Abimbola Alagbe" loading="eager">
       </div>
     </div>
   </section>
