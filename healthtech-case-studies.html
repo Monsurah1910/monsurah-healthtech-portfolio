@@ -37,35 +37,7 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:
 <div><h3>Business analysis work</h3><ul><li>Discovery and problem definition</li><li>Stakeholder analysis and RACI</li><li>Business case, options and benefits</li><li>Functional and non-functional requirements</li><li>AS-IS / TO-BE process thinking</li></ul></div>
 <div><h3>Agile delivery planning</h3><ul><li>Eight epics and 24 user stories</li><li>Acceptance criteria and prioritisation</li><li>Three-sprint delivery approach</li><li>Jira product backlog and Scrum board planning</li></ul></div>
 </div>
-<section class="current-state" aria-labelledby="rch-asis-heading">
-<h3 id="rch-asis-heading">Current-state analysis — AS-IS process</h3>
-<p>The capstone describes a largely manual monitoring journey. Patients take readings at home, record them themselves and share them with the clinic at a later appointment. Clinic staff then re-enter the information for physician review. This creates a time lag between the reading being taken and the care team seeing it.</p>
-<div class="evidence-table">
-<h3>Existing patient-monitoring journey</h3>
-<div class="pathway" role="list" aria-label="AS-IS patient monitoring process">
-<div role="listitem"><b>1. Patient takes a home reading</b><span>A patient measures their health reading at home.</span></div>
-<div role="listitem"><b>2. Records it manually</b><span>The reading is written in a notebook or stored on a phone.</span></div>
-<div role="listitem"><b>3. Waits for an appointment</b><span>The patient shares the recorded reading at a later clinic appointment.</span></div>
-<div role="listitem"><b>4. Nurse re-enters the information</b><span>The nurse types the shared reading into the clinical workflow or record.</span></div>
-<div role="listitem"><b>5. Physician reviews delayed data</b><span>The physician reviews the information after it reaches the clinic.</span></div>
-<div role="listitem"><b>6. Treatment is adjusted if required</b><span>Clinical action follows the physician's review.</span></div>
-</div>
-<p class="meta">This is the current-state journey documented in the RCH capstone report. It is a process summary, not a claim that a separate AS-IS swimlane diagram was produced.</p>
-</div>
-<div class="evidence-table">
-<h3>Current-state baseline and implications</h3>
-<div class="epic-grid">
-<div><b>40,000</b> Chronic-care patients in the scenario</div>
-<div><b>15</b> Outpatient clinics</div>
-<div><b>18%</b> 30-day readmission rate (case-study baseline)</div>
-<div><b>25%</b> Missed follow-up appointments (case-study figure)</div>
-<div><b>2 hours</b> Nurse phone follow-up per clinic per day</div>
-<div><b>$15,000</b> Average avoidable readmission cost (scenario assumption)</div>
-</div>
-<p class="meta">These are figures supplied in the capstone scenario and are presented as baseline context, not as independently verified operational results.</p>
-</div>
-<div class="note"><strong>Key pain points identified:</strong> limited visibility of patients between appointments; manual recording and re-entry of readings; delayed clinical information; missed follow-up appointments; and substantial routine telephone follow-up. These issues informed the opportunity for a more connected monitoring and escalation pathway.</div>
-</section>
+
 <div class="note"><strong>Example requirement:</strong> a monitoring nurse can acknowledge a red alert so that urgent readings have visible ownership. The capstone acceptance criteria include recording acknowledgement and a target acknowledgement time within 30 minutes during operating hours.</div>
 <h3>Agile delivery approach — from backlog to sprint planning</h3>
 <p>The capstone translated the proposed Remote Patient Monitoring solution into a structured Agile backlog. The work was organised into eight epics and 24 user stories, supported by acceptance criteria, prioritisation and sprint traceability.</p>
@@ -85,6 +57,10 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.principles{display:
 
 <h3>Project evidence gallery</h3>
 <p class="meta">Original artefacts prepared for the RCH capstone. The gallery is grouped by analysis activity so visitors can follow the work from stakeholder planning through responsibility mapping to the proposed end-to-end workflows.</p>
+<div class="evidence-grid rch-gallery">
+<figure class="evidence wide"><figcaption><strong>AS-IS Flowchart — RCH Remote Patient Monitoring System</strong><span>Original current-state workflow, from physician referral and home readings through manual recording, clinic review and treatment adjustment.</span></figcaption><a href="assets/rch/rch-00-asis-flowchart.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/rch/rch-00-asis-flowchart.jpg" alt="Original AS-IS flowchart of the RCH Remote Patient Monitoring System" loading="lazy"></a></figure>
+</div>
+<div class="note"><strong>Key Problems / Pain Points</strong><ul><li>Limited visibility between appointments.</li><li>Manual data capture.</li><li>Delayed clinical information.</li><li>Patient non-adherence.</li><li>Missed follow-up appointments.</li><li>Significant nurse telephone follow-up.</li><li>Potentially delayed intervention.</li></ul></div>
 <div class="evidence-grid rch-gallery">
 <figure class="evidence"><figcaption><strong>1. Stakeholder Power–Interest/Influence Matrix</strong><span>Stakeholder groups mapped using the Power–Interest/Influence terminology shown on the original matrix.</span></figcaption><a href="assets/rch/rch-01-power-interest-matrix.png" target="_blank" rel="noopener noreferrer"><img src="assets/rch/rch-01-power-interest-matrix.png" alt="RCH stakeholder Power–Interest Matrix showing the four engagement quadrants" loading="lazy"></a></figure>
 <figure class="evidence"><figcaption><strong>2. Stakeholder Identification and Power–Impact Matrix</strong><span>Stakeholder roles and engagement considerations presented using the Power–Impact terminology shown on the original infographic.</span></figcaption><a href="assets/rch/rch-02-stakeholder-identification.png" target="_blank" rel="noopener noreferrer"><img src="assets/rch/rch-02-stakeholder-identification.png" alt="RCH stakeholder identification infographic with stakeholder power-impact matrix and engagement strategy" loading="lazy"></a></figure>
