@@ -13,6 +13,9 @@
 section{padding:48px 0}.intro{max-width:900px;color:#45566b}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}.card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:9px;padding:24px;box-shadow:0 10px 28px rgba(16,31,61,.045)}h2{color:var(--navy);font-size:1.8rem;margin:8px 0 12px}h3{color:var(--navy);font-size:1.25rem;margin:0 0 8px}.meta{color:var(--muted);font-size:.9rem}.tag{display:inline-block;background:#e6f2f3;color:#17636a;border-radius:4px;padding:4px 9px;font-size:.76rem;font-weight:800;margin:0 5px 8px 0}.skills{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.skills span{background:#f0f6f7;border:1px solid var(--line);padding:5px 9px;border-radius:4px;font-size:.82rem;color:#35545a}.note{margin-top:20px;padding:16px 18px;background:var(--pale);border-left:4px solid var(--teal);border-radius:0 8px 8px 0;color:#35545a}.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.kpi div{background:#f0f6f7;border:1px solid var(--line);border-radius:7px;padding:14px}.kpi strong{display:block;color:var(--navy);font-size:1.3rem}a{color:#17636a}footer{background:#0b2035;color:#d6deea;padding:22px 0;font-size:.88rem}
 .evidence-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}.evidence-item{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}.evidence-visual{min-height:150px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;background:linear-gradient(135deg,#edf4f6,#e2eeee);color:#35545a;font-weight:700}.evidence-item figcaption{padding:16px 18px}.evidence-item figcaption p{margin:6px 0 0;color:var(--muted);font-size:.9rem}.evidence-step{display:inline-block;color:#17636a;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px}
 @media(max-width:720px){.grid,.kpi,.evidence-gallery{grid-template-columns:1fr}.hero{padding:50px 0}.top nav{flex-direction:column}}
+
+.evidence-photo{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#edf4f6;border-bottom:1px solid var(--line)}
+.project-evidence{margin:18px 0 0}.project-evidence h3{margin:0 0 8px}.project-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.project-evidence-grid figure{margin:0;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:#fff}.project-evidence-grid figcaption{padding:9px 11px;color:var(--muted);font-size:.82rem}
 </style>
 </head>
 <body>
@@ -30,23 +33,27 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.grid{display:grid;g
 <p>Analysed a supplied pharmaceutical sales dataset containing 350 transactions and 14 fields. The work focused on data cleaning, validation, sales performance analysis and an interactive management dashboard.</p>
 <div class="kpi"><div><strong>$169.41M</strong><span class="meta">Dataset revenue</span></div><div><strong>44,168</strong><span class="meta">Units sold</span></div><div><strong>350</strong><span class="meta">Transactions</span></div></div>
 <p>Used Excel and Power Query to review duplicates, clean text, standardise categories, handle missing information and check data types. PivotTables and dashboard visuals supported analysis by month, product category, distributor and region.</p>
-<p><a href="healthtech-case-studies.html#apexpharma">Read the full ApexPharma case study →</a></p>
+<p><a href="apexpharma-report.html">Read the full ApexPharma case study →</a></p>
 </article>
 <article class="card" id="medicore">
-<span class="tag">10Alytics · Health Analysis</span><span class="tag">Pharmaceutical sales analytics</span>
+<span class="tag">10Alytics · Health Analysis</span><span class="tag">Power Query · Data cleaning</span>
 <h2>MediCore Health Distribution Ltd.</h2>
-<p><strong>Healthcare Sales Data Analysis</strong></p>
-<p class="meta">10Alytics · Health Analysis July Cohort · Facilitator: Karen Ambrose</p>
-<p>This training case study focuses on pharmaceutical distribution sales records across products, customers, distributors, regions, sales representatives and sales teams. The business problem is that inconsistent raw records need to be cleaned before management can use them to understand commercial performance.</p>
-<h3>Project objective</h3>
-<p>Review, clean and analyse the supplied sales dataset in Microsoft Excel, then present the results through PivotTables, charts and an interactive dashboard.</p>
-<h3>Analysis questions</h3>
-<ul><li>Overall revenue and quantity of products sold, including transaction counts.</li><li>Monthly sales performance and revenue trends.</li><li>Top-performing products and drug categories.</li><li>Sales performance across North, South, East and West regions.</li><li>Revenue contributions from Hospital, Pharmacy and Clinic customer types, and from distributors.</li><li>Performance of sales representatives and sales teams.</li></ul>
-<h3>Workflow and techniques</h3>
-<ul><li>Review the dataset and understand its fields and data types.</li><li>Identify and remove duplicate transactions and handle missing values.</li><li>Apply cleaning techniques including TRIM, Find and Replace, Text to Columns, filtering, sorting and data-type formatting.</li><li>Build PivotTables to summarise revenue, quantity and transaction counts.</li><li>Create charts and an interactive Excel dashboard to communicate insights for management review.</li></ul>
-<p class="meta">The source brief specifies 14 fields: Transaction_ID, Order_Date, Month, Distributor, Customer_Name, Customer_Type, Sales_Region, Product_Name, Drug_Category, Quantity, Unit_Price, Revenue, Sales_Rep and Sales_Team.</p>
-<div class="skills"><span>Microsoft Excel</span><span>Data cleaning</span><span>PivotTables</span><span>Charts</span><span>Interactive dashboard</span><span>Sales performance analysis</span></div>
-<div class="note"><strong>Evidence and reporting status:</strong> The available 10Alytics brief defines the business scenario, dataset fields, analytical questions and workflow. It does not include a completed dashboard or verified result figures in the reviewed source, so no revenue totals, rankings or achieved business outcomes are claimed here.</div>
+<p><strong>Raw Sales Dataset Cleaning &amp; Preparation</strong></p>
+<p class="meta">10Alytics Health Analysis training · Facilitator: Karen</p>
+<p>MediCore Health Distribution Ltd. is a pharmaceutical distribution company supplying medicines and healthcare products to hospitals, pharmacies, clinics and other healthcare providers. The practice dataset contains sales records across distributors, customers, regions, products, sales representatives and teams.</p>
+<h3>Project focus</h3>
+<p>My completed work on this dataset focused on preparing the raw sales records in Excel Power Query. The aim was to improve consistency and structure so the data could be used more reliably in subsequent analysis.</p>
+<h3>Data preparation work</h3>
+<ul>
+<li>Imported and reviewed the raw sales dataset in Power Query.</li>
+<li>Inspected column names, field contents and data types.</li>
+<li>Applied data-cleaning steps to standardise and structure the records.</li>
+<li>Reviewed the resulting cleaned table and loaded the prepared data back into Excel.</li>
+</ul>
+<h3>Evidence and scope</h3>
+<p>The portfolio evidence shows the MediCore company introduction and the cleaned dataset. This project is presented specifically as a data-cleaning and preparation exercise. It is not described as a completed dashboard or full sales-performance analysis.</p>
+<div class="skills"><span>Microsoft Excel</span><span>Power Query</span><span>Raw data review</span><span>Data cleaning</span><span>Data preparation</span></div>
+<div class="note"><strong>Scope note:</strong> The completed evidence supports raw-data preparation using Power Query. No dashboard, PivotTable findings or quantified business outcomes are claimed for this MediCore exercise.</div>
 </article>
 
 <article class="card" id="city-hospital">
@@ -106,22 +113,10 @@ section{padding:48px 0}.intro{max-width:900px;color:#45566b}.grid{display:grid;g
 <h2>AMAlytics – Excel Practice Evidence Gallery</h2>
 <p class="intro">A supporting collection of workbook evidence showing practical spreadsheet skills developed through AMAlytics exercises. This sits within the wider Data Analysis section and complements the featured analytics projects; it is not presented as a separate major project.</p>
 <div class="evidence-gallery">
-<figure class="evidence-item">
-<div class="evidence-visual" role="img" aria-label="AMAlytics raw Excel dataset evidence">Raw Dataset · Before Cleaning</div>
-<figcaption><span class="evidence-step">01 · Source workbook</span><h3>Raw dataset inspection</h3><p>Original worksheet view showing the source columns, sample records and structure before cleaning. The original Excel worksheet shows the raw transaction records and source fields before data cleaning.</p></figcaption>
-</figure>
-<figure class="evidence-item">
-<div class="evidence-visual" role="img" aria-label="AMAlytics cleaned Excel data table evidence">Cleaned Dataset · Excel Table</div>
-<figcaption><span class="evidence-step">02 · Data preparation</span><h3>Cleaning and validation</h3><p>The cleaned Excel table includes derived Year, Month and Customer_Age_Group fields alongside Quantity, Unit_Cost, Unit_Price, Total_Cost, Total_Revenue and Profit/Loss. The table provides a structured basis for subsequent analysis.</p></figcaption>
-</figure>
-<figure class="evidence-item">
-<div class="evidence-visual" role="img" aria-label="Evidence slot for Excel analysis">PivotTables &amp; Analysis</div>
-<figcaption><span class="evidence-step">03 · Analysis</span><h3>Spreadsheet analysis</h3><p>Reserved for PivotTables, formulas or summary analysis that show how the prepared data was explored.</p></figcaption>
-</figure>
-<figure class="evidence-item">
-<div class="evidence-visual" role="img" aria-label="AMAlytics Excel sales performance dashboard evidence">AMAlytics Sales Performance Dashboard</div>
-<figcaption><span class="evidence-step">04 · Visual reporting</span><h3>Dashboard and insights</h3><p>The completed Excel dashboard presents transaction, quantity, revenue, cost and profit/loss KPIs, a monthly profit trend, profit by gender and customer age group, product comparisons, state-level performance and interactive slicers.</p></figcaption>
-</figure>
+<figure class="evidence-item"><div class="evidence-visual">AMAlytics Raw Dataset</div><figcaption><span class="evidence-step">01 · Source workbook</span><h3>Raw dataset inspection</h3><p>Original sales worksheet before preparation.</p></figcaption></figure>
+<figure class="evidence-item"><div class="evidence-visual">AMAlytics Cleaned Dataset</div><figcaption><span class="evidence-step">02 · Data preparation</span><h3>Cleaned Excel table</h3><p>Prepared records with derived fields for subsequent analysis.</p></figcaption></figure>
+<figure class="evidence-item"><div class="evidence-visual">AMAlytics PivotTables</div><figcaption><span class="evidence-step">03 · Analysis</span><h3>PivotTables and working sheets</h3><p>Supporting workbook tabs for analysis and summary reporting.</p></figcaption></figure>
+<figure class="evidence-item"><div class="evidence-visual">AMAlytics Sales Performance Dashboard</div><figcaption><span class="evidence-step">04 · Visual reporting</span><h3>Dashboard and insights</h3><p>KPIs, monthly profit trend, customer and product comparisons, state performance and slicers.</p></figcaption></figure>
 </div>
 <div class="note"><strong>Dashboard figures visible in the supplied screenshot:</strong> 34,866 transactions; 69,820 units; total revenue of $22,344,574.70; total cost of $20,082,966.02; and total profit/loss of $2,261,609 (as displayed on the dashboard). The dashboard also shows a gender split of 52% male and 48% female. These are figures shown in the training workbook dashboard, not audited business results.</div>\n<div class="note"><strong>Evidence status:</strong> The raw dataset, cleaned Excel table and completed AMAlytics dashboard have now been supplied as supporting evidence. The screenshots are documented here; the image files still need to be published as website assets before they can display inline.</div>
 </div></section>
